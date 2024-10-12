@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+import snowflake
 import sys
 
 from common import print_hello
