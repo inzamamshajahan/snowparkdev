@@ -1,12 +1,16 @@
 import sys
 import os
 import yaml
+import subprocess
 
 # os.system(f"conda init")
 # os.system(f"conda activate snowpark")
 directory_path= sys.argv[1]
 os.system(f"echo {directory_path}")
+os.system(f"printing pwd below:")
 os.system(f"pwd")
+subprocess.run(["pip", "freeze"])
+
 
 os.chdir(f"{directory_path}")
 # Make sure all 6 SNOWFLAKE_ environment variables are set
