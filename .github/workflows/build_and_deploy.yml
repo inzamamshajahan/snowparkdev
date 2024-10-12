@@ -31,7 +31,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Install Python snowflake-snowpark-python
-        run: conda install snowflake-snowpark-python
+        run: conda install snowflake-snowpark-python==1.23.0
 
       - name: Install Python snowflake -U
         run: pip install snowflake -U
