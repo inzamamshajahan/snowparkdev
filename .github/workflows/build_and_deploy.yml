@@ -30,6 +30,9 @@ jobs:
       - name: Install Python packages
         run: pip install -r requirements.txt
 
+      - name: Install Python snowflake-snowpark-python
+        run: conda install -r snowflake-snowpark-python
+
       - name: Deploy Snowpark apps
         working-directory: first_snowpark_project
         env:
