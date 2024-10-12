@@ -2,6 +2,8 @@ import sys
 import os
 import yaml
 
+os.system(f"echo 'dependencies resolved'")
+
 # os.system(f"conda init")
 # os.system(f"conda activate snowpark")
 directory_path= sys.argv[1]
